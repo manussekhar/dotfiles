@@ -1,0 +1,9 @@
+alias c='clear'
+alias h='history'
+alias r='source ~/.zshrc'
+alias sn='shutdown -h now'
+alias up='sudo apt update -y && sudo apt upgrade -y && flatpak update -y'
+alias ls='exa'
+alias prt='prettier --write .'
+alias ap="absolute_path"
+
