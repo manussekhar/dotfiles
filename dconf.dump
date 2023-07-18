@@ -6,6 +6,14 @@ next-applet-id=15
 [org/cinnamon/desktop/background]
 picture-uri='file:///home/manu/1.jpg'
 
+[org/cinnamon/desktop/background/slideshow]
+delay=15
+image-source='xml:///usr/share/gnome-background-properties/adwaita.xml'
+
+[org/cinnamon/desktop/interface]
+gtk-theme='Dracula'
+icon-theme='Dracula'
+
 [org/cinnamon/desktop/peripherals/keyboard]
 numlock-state=true
 
@@ -21,6 +29,9 @@ numlock-state='on'
 [org/cinnamon/settings-daemon/peripherals/touchscreen]
 orientation-lock=false
 
+[org/cinnamon/theme]
+name='Dracula'
+
 [org/gnome/desktop/a11y/applications]
 screen-keyboard-enabled=false
 screen-reader-enabled=false
@@ -34,6 +45,18 @@ secondary-click-time=1.2
 
 [org/gnome/desktop/interface]
 toolkit-accessibility=false
+
+[org/gnome/file-roller/listing]
+list-mode='as-folder'
+name-column-width=250
+show-path=false
+sort-method='name'
+sort-type='ascending'
+
+[org/gnome/file-roller/ui]
+sidebar-width=200
+window-height=480
+window-width=600
 
 [org/gtk/settings/file-chooser]
 date-format='regular'
@@ -50,10 +73,10 @@ window-position=(185, 0)
 window-size=(990, 691)
 
 [org/nemo/preferences]
-show-hidden-files=true
+show-hidden-files=false
 
 [org/nemo/window-state]
-geometry='800x550+50+50'
+geometry='800x557+50+50'
 maximized=false
-sidebar-bookmark-breakpoint=0
+sidebar-bookmark-breakpoint=6
 start-with-sidebar=true
