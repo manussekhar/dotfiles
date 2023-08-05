@@ -1,10 +1,21 @@
+[org/blueman/general]
+last-adapter='hci0'
+window-properties=[528, 350, 47, 299]
+
+[org/blueman/plugins/powermanager]
+auto-power-on=@mb true
+
+[org/blueman/plugins/recentconns]
+recent-connections=[{'adapter': 'E8:48:B8:C8:20:00', 'address': '88:C9:E8:C8:9A:C8', 'alias': 'WH-1000XM4', 'icon': 'audio-headset', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1690381672.6577983'}]
+
 [org/cinnamon]
 desklet-snap-interval=25
-enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:1:separator@cinnamon.org:1', 'panel1:left:2:grouped-window-list@cinnamon.org:2', 'panel1:right:5:systray@cinnamon.org:3', 'panel1:right:6:xapp-status@cinnamon.org:4', 'panel1:right:7:notifications@cinnamon.org:5', 'panel1:right:8:printers@cinnamon.org:6', 'panel1:right:9:removable-drives@cinnamon.org:7', 'panel1:right:10:keyboard@cinnamon.org:8', 'panel1:right:11:favorites@cinnamon.org:9', 'panel1:right:12:network@cinnamon.org:10', 'panel1:right:13:sound@cinnamon.org:11', 'panel1:right:14:power@cinnamon.org:12', 'panel1:right:15:calendar@cinnamon.org:13', 'panel1:right:16:cornerbar@cinnamon.org:14']
+enabled-applets=['panel1:left:1:separator@cinnamon.org:1', 'panel1:left:2:grouped-window-list@cinnamon.org:2', 'panel1:right:5:systray@cinnamon.org:3', 'panel1:right:6:xapp-status@cinnamon.org:4', 'panel1:right:7:notifications@cinnamon.org:5', 'panel1:right:8:printers@cinnamon.org:6', 'panel1:right:9:removable-drives@cinnamon.org:7', 'panel1:right:10:keyboard@cinnamon.org:8', 'panel1:right:11:favorites@cinnamon.org:9', 'panel1:right:12:network@cinnamon.org:10', 'panel1:right:13:sound@cinnamon.org:11', 'panel1:right:14:power@cinnamon.org:12', 'panel1:right:15:calendar@cinnamon.org:13', 'panel1:right:16:cornerbar@cinnamon.org:14']
 enabled-desklets=@as []
 enabled-extensions=['user-shadows@nathan818fr']
 hotcorner-layout=['expo:true:0', 'scale:false:0', 'scale:false:0', 'desktop:false:0']
 next-applet-id=20
+panel-edit-mode=false
 panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 28, "center": 28, "right": 16}]'
 panels-autohide=['1:intel']
 panels-height=['1:33']
@@ -13,26 +24,62 @@ panels-height=['1:33']
 exec='kitty'
 
 [org/cinnamon/desktop/background]
-picture-uri='file:///home/manu/Downloads/peakpx.jpg'
+picture-options='centered'
+picture-uri='file:///home/manu/.config/1.jpg'
+primary-color='#02023c3c8888'
 
 [org/cinnamon/desktop/background/slideshow]
 delay=15
-image-source='xml:///usr/share/gnome-background-properties/adwaita.xml'
+image-source='directory:///home/manu/Pictures'
 
 [org/cinnamon/desktop/interface]
+cursor-blink-time=1200
 font-name='Ubuntu 9'
 gtk-theme='Dracula'
 icon-theme='Dracula'
 text-scaling-factor=1.0
 
+[org/cinnamon/desktop/keybindings]
+custom-list=['custom3', 'custom1', '__dummy__', 'custom0', 'custom2']
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom0]
+binding=['<Super>Return']
+command='/usr/bin/kitty'
+name='Launch Kitty'
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom1]
+binding=['<Super>f']
+command='/usr/bin/nemo'
+name='Launch Nemo'
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom2]
+binding=['<Super>b']
+command='/usr/bin/firefox'
+name='Launch firefox'
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom3]
+binding=['<Super>space']
+command='rofi -show combi -modes combi -combi-modes "window,drun,run"'
+name='Launch Rofi'
+
+[org/cinnamon/desktop/keybindings/wm]
+close=['<Alt>F4', '<Super>q']
+
 [org/cinnamon/desktop/peripherals/keyboard]
+delay=uint32 500
 numlock-state=true
+repeat-interval=uint32 30
 
 [org/cinnamon/desktop/sound]
 event-sounds=false
 
 [org/cinnamon/desktop/wm/preferences]
 titlebar-font='Ubuntu Semi-Bold 10'
+
+[org/cinnamon/gestures]
+enabled=false
+pinch-percent-threshold=uint32 40
+swipe-percent-threshold=uint32 60
 
 [org/cinnamon/muffin]
 experimental-features=['x11-randr-fractional-scaling']
@@ -42,6 +89,14 @@ numlock-state='on'
 
 [org/cinnamon/settings-daemon/peripherals/touchscreen]
 orientation-lock=false
+
+[org/cinnamon/settings-daemon/plugins/power]
+lid-close-ac-action='blank'
+lid-close-battery-action='blank'
+sleep-display-ac=1800
+sleep-display-battery=1800
+sleep-inactive-ac-timeout=0
+sleep-inactive-battery-timeout=0
 
 [org/cinnamon/theme]
 name='Dracula'
@@ -56,6 +111,12 @@ dwell-threshold=10
 dwell-time=1.2
 secondary-click-enabled=false
 secondary-click-time=1.2
+
+[org/gnome/desktop/background]
+picture-options='centered'
+picture-uri='file:///home/manu/Firefox_wallpaper.png'
+picture-uri-dark='file:///home/manu/Firefox_wallpaper.png'
+primary-color='#02023c3c8888'
 
 [org/gnome/desktop/interface]
 toolkit-accessibility=false
@@ -72,18 +133,37 @@ sidebar-width=200
 window-height=480
 window-width=600
 
+[org/gnome/nm-applet/eap/13bc9ec0-11c1-414d-a22d-29102088dbb7]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/84b599ea-626b-40dc-9932-f46914089db7]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/9d5b628f-049b-4a7b-b9da-8209dda03b63]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/c9343a8c-9ceb-41ee-b858-028c3ad981a1]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gtk/settings/color-chooser]
+selected-color=(true, 1.0, 1.0, 1.0, 1.0)
+
 [org/gtk/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
 show-hidden=false
 show-size-column=true
 show-type-column=true
-sidebar-width=156
+sidebar-width=159
 sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
-window-position=(185, 1)
+window-position=(188, 20)
 window-size=(990, 691)
 
 [org/nemo/desktop]
