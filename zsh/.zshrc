@@ -40,5 +40,7 @@ take()
 absolute_path ()
 { echo "$PWD/$1"; }
 
+hs () { fc -Dlim "*$@*" 1 }
+
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh

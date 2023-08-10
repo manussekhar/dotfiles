@@ -9,8 +9,9 @@ auto-power-on=@mb true
 recent-connections=[{'adapter': 'E8:48:B8:C8:20:00', 'address': '88:C9:E8:C8:9A:C8', 'alias': 'WH-1000XM4', 'icon': 'audio-headset', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1690381672.6577983'}]
 
 [org/cinnamon]
+command-history=['nemo-desktop']
 desklet-snap-interval=25
-enabled-applets=['panel1:left:1:separator@cinnamon.org:1', 'panel1:left:2:grouped-window-list@cinnamon.org:2', 'panel1:right:5:systray@cinnamon.org:3', 'panel1:right:6:xapp-status@cinnamon.org:4', 'panel1:right:7:notifications@cinnamon.org:5', 'panel1:right:8:printers@cinnamon.org:6', 'panel1:right:9:removable-drives@cinnamon.org:7', 'panel1:right:10:keyboard@cinnamon.org:8', 'panel1:right:11:favorites@cinnamon.org:9', 'panel1:right:12:network@cinnamon.org:10', 'panel1:right:13:sound@cinnamon.org:11', 'panel1:right:14:power@cinnamon.org:12', 'panel1:right:15:calendar@cinnamon.org:13', 'panel1:right:16:cornerbar@cinnamon.org:14']
+enabled-applets=['panel1:left:1:separator@cinnamon.org:1', 'panel1:center:0:grouped-window-list@cinnamon.org:2', 'panel1:right:5:systray@cinnamon.org:3', 'panel1:right:6:xapp-status@cinnamon.org:4', 'panel1:right:7:notifications@cinnamon.org:5', 'panel1:right:9:removable-drives@cinnamon.org:7', 'panel1:right:10:keyboard@cinnamon.org:8', 'panel1:right:11:favorites@cinnamon.org:9', 'panel1:right:12:network@cinnamon.org:10', 'panel1:right:13:sound@cinnamon.org:11', 'panel1:right:14:power@cinnamon.org:12', 'panel1:right:15:calendar@cinnamon.org:13', 'panel1:right:16:cornerbar@cinnamon.org:14']
 enabled-desklets=@as []
 enabled-extensions=['user-shadows@nathan818fr']
 hotcorner-layout=['expo:true:0', 'scale:false:0', 'scale:false:0', 'desktop:false:0']
@@ -25,12 +26,13 @@ exec='kitty'
 
 [org/cinnamon/desktop/background]
 picture-options='centered'
-picture-uri='file:///home/manu/.config/1.jpg'
+picture-uri='file:///home/manu/Pictures/7810629.jpg'
 primary-color='#02023c3c8888'
 
 [org/cinnamon/desktop/background/slideshow]
 delay=15
 image-source='directory:///home/manu/Pictures'
+slideshow-enabled=false
 
 [org/cinnamon/desktop/interface]
 cursor-blink-time=1200
@@ -101,6 +103,11 @@ sleep-inactive-battery-timeout=0
 [org/cinnamon/theme]
 name='Dracula'
 
+[org/gnome/boxes]
+first-run=false
+view='icon-view'
+window-maximized=true
+
 [org/gnome/desktop/a11y/applications]
 screen-keyboard-enabled=false
 screen-reader-enabled=false
@@ -114,9 +121,10 @@ secondary-click-time=1.2
 
 [org/gnome/desktop/background]
 picture-options='centered'
-picture-uri='file:///home/manu/Firefox_wallpaper.png'
+picture-uri='file:///home/manu/Pictures/lofi-samurai-100922.jpg'
 picture-uri-dark='file:///home/manu/Firefox_wallpaper.png'
 primary-color='#02023c3c8888'
+show-desktop-icons=false
 
 [org/gnome/desktop/interface]
 toolkit-accessibility=false
@@ -132,6 +140,10 @@ sort-type='ascending'
 sidebar-width=200
 window-height=480
 window-width=600
+
+[org/gnome/libgnomekbd/keyboard]
+layouts=['us']
+options=['Compose key\tcompose:ralt']
 
 [org/gnome/nm-applet/eap/13bc9ec0-11c1-414d-a22d-29102088dbb7]
 ignore-ca-cert=false
@@ -173,10 +185,10 @@ font='Ubuntu 10'
 show-hidden-files=false
 
 [org/nemo/window-state]
-geometry='800x557+260+67'
-maximized=true
+geometry='800x557+50+50'
+maximized=false
 side-pane-view='places'
-sidebar-bookmark-breakpoint=6
+sidebar-bookmark-breakpoint=8
 start-with-sidebar=true
 
 [org/x/viewer/window]
