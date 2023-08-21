@@ -11,15 +11,28 @@ recent-connections=[{'adapter': 'E8:48:B8:C8:20:00', 'address': '88:C9:E8:C8:9A:
 [org/cinnamon]
 command-history=['nemo-desktop']
 desklet-snap-interval=25
+device-aliases=['/org/freedesktop/UPower/devices/battery_BAT1:=LENOVO PABAS0241231']
 enabled-applets=['panel1:left:1:separator@cinnamon.org:1', 'panel1:center:0:grouped-window-list@cinnamon.org:2', 'panel1:right:5:systray@cinnamon.org:3', 'panel1:right:6:xapp-status@cinnamon.org:4', 'panel1:right:7:notifications@cinnamon.org:5', 'panel1:right:9:removable-drives@cinnamon.org:7', 'panel1:right:10:keyboard@cinnamon.org:8', 'panel1:right:11:favorites@cinnamon.org:9', 'panel1:right:12:network@cinnamon.org:10', 'panel1:right:13:sound@cinnamon.org:11', 'panel1:right:14:power@cinnamon.org:12', 'panel1:right:15:calendar@cinnamon.org:13', 'panel1:right:16:cornerbar@cinnamon.org:14']
 enabled-desklets=@as []
 enabled-extensions=['user-shadows@nathan818fr']
-hotcorner-layout=['expo:true:0', 'scale:false:0', 'scale:false:0', 'desktop:false:0']
+hotcorner-layout=['scale:true:0', 'scale:false:0', 'scale:false:0', 'desktop:false:0']
 next-applet-id=20
 panel-edit-mode=false
 panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 28, "center": 28, "right": 16}]'
 panels-autohide=['1:intel']
 panels-height=['1:33']
+
+[org/cinnamon/desktop/a11y/keyboard]
+bouncekeys-delay=300
+mousekeys-accel-time=300
+mousekeys-init-delay=300
+mousekeys-max-speed=10
+slowkeys-delay=300
+
+[org/cinnamon/desktop/a11y/mouse]
+dwell-threshold=10
+dwell-time=1.2
+secondary-click-time=1.2
 
 [org/cinnamon/desktop/applications/terminal]
 exec='kitty'
@@ -129,6 +142,9 @@ show-desktop-icons=false
 [org/gnome/desktop/interface]
 toolkit-accessibility=false
 
+[org/gnome/evince/default]
+window-ratio=(1.6483516483516483, 1.0676156583629892)
+
 [org/gnome/file-roller/listing]
 list-mode='as-folder'
 name-column-width=250
@@ -138,8 +154,8 @@ sort-type='ascending'
 
 [org/gnome/file-roller/ui]
 sidebar-width=200
-window-height=480
-window-width=600
+window-height=720
+window-width=1366
 
 [org/gnome/libgnomekbd/keyboard]
 layouts=['us']
@@ -161,6 +177,10 @@ ignore-phase2-ca-cert=false
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
+[org/gnome/nm-applet/eap/ff71f048-101c-4e9b-bf50-0170d7a2564d]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
 [org/gtk/settings/color-chooser]
 selected-color=(true, 1.0, 1.0, 1.0, 1.0)
 
@@ -175,7 +195,7 @@ sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
-window-position=(188, 20)
+window-position=(188, 13)
 window-size=(990, 691)
 
 [org/nemo/desktop]
@@ -186,7 +206,7 @@ show-hidden-files=false
 
 [org/nemo/window-state]
 geometry='800x557+50+50'
-maximized=false
+maximized=true
 side-pane-view='places'
 sidebar-bookmark-breakpoint=8
 start-with-sidebar=true
